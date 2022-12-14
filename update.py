@@ -7,4 +7,5 @@ def update(mydb, req_data):
     cursor.execute(sql, input_data)
     mydb.commit()
     cursor.close()
+    logging.warning("Record updated successfully")
     return "Record updated successfully"

@@ -7,6 +7,7 @@ def create(mydb, req_data):
     cursor.execute(sql, input_data)
     mydb.commit()
     cursor.close()
+    logging.warning("Record inserted successfully")
     return "Record inserted successfully"
 
 

@@ -7,4 +7,5 @@ def delete(mydb, req_data):
     cursor.execute(sql, (input_data,))
     mydb.commit()
     cursor.close()
+    logging.warning("Record deleted successfully")
     return "Record deleted successfully"

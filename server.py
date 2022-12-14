@@ -6,6 +6,7 @@ from update import update
 from delete import delete
 import logging
 import json
+logging.basicConfig(format = '%(asctime)s | %(filename)s: %(message)s', level = logging.NOTSET)
 
 def db_connect():
     return mysql.connector.connect(host = "localhost", user = "devuser", password = "Passw0rd*123", database = "python_db")

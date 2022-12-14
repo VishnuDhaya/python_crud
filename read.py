@@ -7,4 +7,5 @@ def read(mydb):
     cursor.execute(sql);
     results = json.dumps(cursor.fetchall())
     cursor.close()
+    logging.warning(results)
     return results
